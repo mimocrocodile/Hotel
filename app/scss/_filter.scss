@@ -1,0 +1,307 @@
+.bg__filter{
+    height: 14rem;
+    background-image: url("/images/filterbackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    
+    
+}
+.filter{
+    
+    display: flex;
+    position: absolute;
+    top: 3.5625rem;
+    width: 75rem;
+    color: $white;
+    // p{
+    //    font-size: 16px;
+    //    font-weight: 700;
+    // }
+   
+    >div{
+       margin-top: 1.8875rem;
+    }        
+   
+    input[type=checkbox]{
+        display: none;
+        
+    }
+    button{
+        color: $white;
+    }
+    input[type=checkbox] + label:before{
+        display: inline-block;
+        width:35px;
+        margin-top: 23px; 
+        // display: inline-block;
+        // margin-top: 15px;
+        
+        content: url("/images/checkbox-off.svg");
+        
+        // letter-spacing: 10px;
+    }
+    input[type=checkbox]:checked + label:before{
+        content:url("/images/checkbox-on.svg");
+        
+        // letter-spacing: 10px;
+    }
+   label{
+      font-size: $small;
+   }
+}
+
+
+.infrastructure{
+    width: 25rem;
+    
+    flex: 1;
+    p, input[type=checkbox]+label{
+        margin-left:4.4375rem;
+    }
+    p{
+        @include p-title;
+    }
+}
+.house__type{
+    flex: 1;
+    p,  input[type=checkbox]+label{
+        margin-left:2.875rem;
+    }
+    p{
+        @include p-title;
+    }
+}
+.price{
+    
+    flex: 3;
+       &__container{
+            position: relative;
+            margin-left: 22.8125rem;
+            p{
+                display: inline-block;
+            }
+            p:first-child{
+                @include p-title;
+            }
+            p:nth-child(3){
+                
+                border-right-style: none;
+            }
+            p:nth-child(4){
+                position: absolute;
+                top:32px;
+                //    padding: 5px 0;
+                width: 1px;
+                color: $white;
+                font-size:32px;
+                font-weight: 400;
+
+            }
+            p:nth-child(5){
+                
+                border-left-style: none;
+                
+            }
+
+            img{
+                position: absolute;
+                top: 86px;
+                cursor: pointer;
+            }
+            .image__dot{
+                :hover{
+                    filter: brightness(.9);
+                }
+            }
+            .second__dot{
+                right: 4.6875rem;
+            }
+            
+   }
+   &__val{
+    width: 9.6875rem;
+    text-align: center;
+    padding: 9px 0;
+    border: solid white 2px;
+    margin-top: 15px;
+    font-weight: 400;
+   //    padding: 12px 65px;
+    }
+    
+    .show__results{
+        position: absolute;
+        left: 50%;
+        margin-top: 30px;
+        transform: translate(-50%);
+        background-color: transparent;
+        border: solid 2px $white;
+        width: 136px;
+        height: 40px;
+        outline: none;
+        border-radius: 2px;
+        &:hover{
+            background-color: $white;
+            color: black;
+        }
+        
+    }
+
+}
+
+.search__results{
+   position: relative;
+    height: 5.375rem;
+    p{
+        display: inline-block;
+    }
+}
+
+.search__text{
+    margin: 1.8125rem 0 0 4.45625rem;
+    @include bold-text();
+    
+}
+.sort__types__info{
+    display: inline-block;
+    margin: 2.2875rem 0 0 3.00625rem;
+}
+.sort__types{
+    margin-left: 2.0625rem;
+    border-bottom: 1px dotted;
+    opacity: 30%;
+    font-size: 12px;
+    cursor: pointer;
+    &:hover{
+        opacity: 100%;
+    }
+    &:active{
+        color:$link-hover;
+    }
+    &:nth-child(2){
+        color: $link-hover;
+        opacity: 100%;
+        border: none;
+    }
+}
+
+hr{
+    opacity: 50%;
+}
+.up__down{
+    position: absolute;
+    top:50%;
+    opacity: 50%;
+    left: 91%;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-image: url("/images/icon-up-dir.svg");
+    background-repeat: no-repeat;
+    outline: none;
+    &:hover{
+        opacity: 100%;
+        
+    }
+    
+    &:last-child{
+        left: 93%;
+        background-image: url("/images/icon-down-dir.svg");
+    }
+}
+
+
+
+.test{
+    background-image: url("/images/icon-up-dir.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+    
+.result{
+    position:relative;
+    height: 9.4375rem;
+    &__info{
+        display: inline-block;
+        width: 55.8125rem;
+        margin: 1.8125rem 0 0 1.6875rem;
+    }
+    &__image{
+        margin: 1.875rem 0 0 4.5rem;
+        
+        width: 8.4375rem;
+        height: 5.625rem;
+        display: inline-block;
+        
+        
+        &__1{
+            background-image: url("/images/search1.png");
+        }
+        &__2{
+            background-image: url("/images/search2.png");
+        }
+        &__3{
+            background-image: url("/images/search3.png");
+        }
+        
+          
+    }
+    
+    &__title{
+        @include bold-text();
+    }
+    &__description__block{
+        display: flex; 
+        width: 15.125rem;
+    }
+    &__description{
+        display: inline-block;
+        flex: 1;
+        @include regulate-text();
+        margin:1.125rem 0 0.9875rem;
+        // &:nth-child(3){
+        //     flex: 1;
+        // }
+    }
+    
+    &__reserve{
+        width: 6.875rem;
+        height: 1.6875rem;
+        color:$white;
+        font-weight: 700;
+        font-size: $small;
+        background-color: $link-hover;
+        border: none;
+        
+        &:nth-child(4){
+            margin-left: 6px;
+            width: 8.875rem;
+            background-color: $link-active;
+        }
+    }
+    &__stars{
+        position: absolute;
+        top: 1.875rem;
+        right: 10px;
+        
+    }
+}
+
+.rating{
+    position: absolute;
+    pointer-events: none;
+    top: 110px;
+    right: 35px;
+    background-color: $body-back;
+    color:#707070;
+    @include regulate-text();
+    width: 6.875rem;
+    height: 1.6875rem;
+    
+    font-size: $small;
+    border: none;
+}

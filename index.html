@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    
+    
+    
+    <title>Document</title>
+</head>
+<body onload="check()">
+    <div class="main__container" style="background-color: white;">
+    <header style="background-color: white;">
+        <a href="index.html" class="header__logo">
+            <img src="images/logo.svg" alt="">
+        </a>
+        <nav class="conteiner container--pall flex flex-jc-sb flex-ai-c" >
+            
+            <div class="header__links flex flex-jc-sb">
+                <a href="map.html">Информация</a><a href="http://jsfiddle.net/shekhardesigner/aYrhG/">Фото и видео</a>
+            </div>
+           
+            <div class="header__links flex flex-jc-sb">
+                <a href="http://jsfiddle.net/shekhardesigner/aYrhG/">Карта штата</a><a href="search.html">Гостиницы</a>
+            </div>
+        </nav>  
+       
+    </header>
+    <div class="sedona sedona__image" >
+        <img src="/images/welcome.png" alt="" class="sedona__welcome">
+        
+    </div>
+    
+        <img src="/images/bottom.png" alt="" class="bottom"/>
+    
+        <p class="info info__bold"> 
+            СЕДОНА — небольшой городок в АРИЗОНЕ, <br>
+            ЗАСЛУЖИвающий большего!
+        </p>
+        <p class="info info__regulate">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+   
+    <div class="middle">
+        <div class="template template__small">
+            <p class="title">Настоящий <br> городок</p>
+            <p class="content">№1</p>
+            <p class="content">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>    
+        <div class="template template__large"></div>
+    </div>
+    <div class="middle">
+        <div class="template template__small template__second__layer">
+            <img src="/images/house_logo.svg" alt="">
+            <p class="title">Жилье</p>
+            <p class="content">Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
+        </div>
+        <div class="template template__small template__second__layer">
+            <img src="/images/burger.svg" alt="">
+            <p class="title">Еда</p>
+            <p class="content">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br> Вы НЕ разочаруетесь!</p>
+        </div>
+        <div class="template template__small template__second__layer">
+            <img src="/images/prize.svg" alt="">
+            <p class="title">Сувениры</p>
+            <p class="content">Не только китайского, но и местного <br> производства!</p>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="template template__small template__smallthird__layer">
+            <p class="title">ТАМ ЕСТЬ <br> Мост дьявола</p>
+            <p class="content">№2</p>
+            <p class="content">Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p>
+        </div>    
+        <div class="template template__large template__largethird__layer"></div>
+    </div>
+    <div class="middle">
+        <div class="template template__small template__fourth__layer">
+            <p class="title">НЕБОЛЬШАЯ <br>ПЛОЩАДЬ</p>
+            <p class="content">№3</p>
+            <p class="content">ВСЕ достопримечательности <br> находятся очень близко</p>
+        </div>
+        <div class="template template__small template__fourth__layer">
+            <p class="title">КРАСИВАЯ<br>ДОРОГА</p>
+            <p class="content">№4</p>
+            <p class="content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем <br> НЕ СКУЧНО!</p>
+        </div>
+        <div class="template template__small template__fourth__layer">
+            <p class="title">МАЛО<br>ТУРИСТОВ</p>
+            <p class="content">№5</p>
+            <p class="content">Большинство едет в гранд каньон и <br> толпится там</p>
+        </div>
+    </div>
+    <div class="search__hotel">
+            <p class="title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+            <p class="content">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <button type="button" class="bbutton">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+    </div>
+    <div class="search hide">
+        <form action="">
+            <label for="enter" >Дата заезда: </label>
+            <input name="enter" type="date" class="enter" placeholder="">
+            <label for="escape">Дата выезда: </label>
+            <input type="date" name="escape" class="escape">
+            
+            <div class="adults">
+                <label for="adults">Взрослые: </label>
+                <button type="button" name="adults" class="people minus" onclick="minusCount('.inp')"></button>
+                <input type="text" name="adults" class="people inp">
+                <button type="button" name="adults" class="people plus" onclick="plusCount('.inp')"></button>
+
+                <label for="children">Дети: </label>
+                <button type="button" name="children" class="people minus" onclick="minusCount('.inp2')"></button>
+                <input type="text" name="children" class="people inp2">
+                <button type="button" name="children" class="people plus" onclick="plusCount('.inp2')"></button>
+               
+            </div>
+           <a href="#"> <button type="button" class="find">Найти</button></a>
+           
+        </form>
+    </div>
+    <div class="map" ></div>
+
+    <div class="footer">
+        <div class="hashtag flex flex-jc-c flex-ai-c">
+            <p class="content">#visitSEDONA</p>
+        </div>
+        <div class="socials flex flex-jc-c flex-ai-c">
+            <div class="social social__twitter "></div>
+            <div class="social social__fb"></div>
+            <div class="social social__youtube"></div>
+        </div>
+        <div class="academ flex flex-jc-c flex-ai-c">
+           
+        </div>
+            
+        
+        
+    </div>
+</div>
+<script
+
+    <script src="/app/js/script.js"></script>
+</body>
+</html>

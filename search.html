@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main__container" style="background-color: white;">
+        <header>
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <nav class="conteiner container--pall flex flex-jc-sb flex-ai-c" >
+                
+                <div class="header__links flex flex-jc-sb">
+                    <a href="test.html">Информация</a><a href="http://jsfiddle.net/shekhardesigner/aYrhG/">Фото и видео</a>
+                </div>
+            
+                <div class="header__links flex flex-jc-sb">
+                    <a href="http://jsfiddle.net/shekhardesigner/aYrhG/">Карта штата</a><a href="search.html">Гостиницы</a>
+                </div>
+            </nav>  
+        
+        </header>
+        <div class="bg__filter">
+           
+        </div>
+       <form action="">
+           <div class="filter">
+               
+                <div class="infrastructure">
+                    <p>Инфраструктура</p>
+                    <input type="checkbox" id="one"> <label for="one">бассейн</label><br>
+                    <input type="checkbox" id="two"> <label for="two">парковка</label><br>
+                    <input type="checkbox" id="three"> <label for="three">wi-fi</label><br>
+                </div>
+                <div class="house__type">
+                    <p>Тип жилья: </p>
+                    <input type="checkbox" id="first"> <label for="first">гостиница</label><br>
+                    <input type="checkbox" id="second"> <label for="second">отель</label><br>
+                    <input type="checkbox" id="third"> <label for="third">апартаменты</label><br>
+                </div>
+                <div class="price">
+                    <div class="price__container">
+                        <p>Стоимость в сутки</p></br>
+                        
+                        <p class="price__val">от 0</p><p>|</p><p class="price__val">до 3000</p>
+                        <hr style="margin-top: 18px; width: 310px;margin-left:0; border: 1px solid white;">
+                        <div class="image__dot">
+                            <img src="/images/filter-button.svg" alt="">
+                            <img src="/images/filter-button.svg" alt="" class="second__dot">
+                        </div>
+                        <button type="submit" class="show__results">Показать</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        <div class="search__results">
+            <p class="search__text">найдено: 3</p>
+            <div class="sort__types__info">
+                <p style="font-size: 12px;">сортировка</p>
+                <p class="sort__types">по цене</p>
+                <p class="sort__types">по типу</p>
+                <p class="sort__types">по рейтингу</p>
+               <button class="up__down"></button>
+               <button class="up__down"></button>
+               
+                <!-- <img src="/images/icon-up-dir.svg" alt="" class="up__down"><img src="/images/icon-down-dir.svg" alt="" class="up__down"> -->
+            </div>
+        </div>
+        <hr>
+        <div class="result">
+            <div class="result__image result__image__1"></div>
+            <div class="result__info">
+                <p class="result__title">amara resort & spa</p> 
+                <div class="result__description__block" >
+                    <p class="result__description">гостиница </p>
+                    <p class="result__description"> от 4000 Р.</p>
+                </div>
+                <button type="button" class="result__reserve">подробнее</button> 
+                <button type="button" class="result__reserve">забронировать</button> 
+                
+            </div>
+            <img src="/images/star.svg" alt="" class="result__stars" >
+          
+            <button type="button" class="rating">рейтинг: 8.5</button>
+        </div>
+        <hr>
+        <div class="result">
+            <div class="result__image result__image__2"></div>
+            <div class="result__info">
+                <p class="result__title">amara resort & spa</p> 
+                <div class="result__description__block" >
+                    <p class="result__description">аппартаменты</p>
+                    <p class="result__description"> от 3000 Р.</p>
+                </div>
+                <button type="button" class="result__reserve">подробнее</button> 
+                <button type="button" class="result__reserve">забронировать</button> 
+                
+            </div>
+            
+            <button type="button" class="rating">рейтинг: 8.9</button>
+        </div>
+        <hr>
+        <div class="result">
+            <div class="result__image result__image__3"></div>
+            <div class="result__info">
+                <p class="result__title">amara resort & spa</p> 
+                <div class="result__description__block" >
+                    <p class="result__description">мотель </p>
+                    <p class="result__description"> от 2000 Р.</p>
+                </div>
+                <button type="button" class="result__reserve">подробнее</button> 
+                <button type="button" class="result__reserve">забронировать</button> 
+                
+            </div>
+            
+            
+            <button type="button" class="rating">рейтинг: 9.2</button>
+        </div>
+        <hr>
+
+        <div class="footer">
+            <div class="hashtag flex flex-jc-c flex-ai-c">
+                <p class="content">#visitSEDONA</p>
+            </div>
+            <div class="socials flex flex-jc-c flex-ai-c">
+                <div class="social social__twitter "></div>
+                <div class="social social__fb"></div>
+                <div class="social social__youtube"></div>
+            </div>
+            <div class="academ flex flex-jc-c flex-ai-c">
+                <p> website by  </p>
+                <div class="academ__logo"></div>
+            </div>
+                
+            
+            
+        </div>
+    </div>
+    <script type="module" src="/app/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+.sedona{
+    overflow: hidden;
+    &__image{
+        width: 100%;
+        position: relative;
+        background-image: url("/images/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 25%;
+        height: 31.845rem;
+        
+        
+    }
+    &__welcome{
+        position: absolute;
+        top: 4.75rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    
+}
+
+.bottom{
+    // ;
+    
+    height: 3.5625rem;
+    position:absolute;
+    width: 1200px;
+    top: 32.307rem;
+    // left: 50%;
+    // transform: translate(-50%);
+}
+.info{
+    text-align: center;
+   &__bold{
+        margin-top: 4.0625rem;
+       @include bold-text();
+   }
+   &__regulate{
+        @include regulate-text();
+       margin-top: 2.5rem;
+       margin-bottom: 3.75rem;
+       
+   } 
+}

@@ -1,0 +1,58 @@
+.middle{
+    display: flex;
+}
+.template{
+    color: $white;
+    height: 16rem;
+    p{
+        text-align: center;
+    }
+    &__small{
+        width: 25rem;
+        flex: 2;
+        order: 1;
+        background-color: #81b3d2;
+        .title{
+        @include bold-text();
+        margin-top: 3.125rem;
+    }
+        
+    }
+    &__large{
+        flex: 4;
+        order: 2;
+        background-image: url('/images/house.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__second__layer{
+        height: 20.625rem;
+        background-color: $white;
+        color: $black;
+        img{
+            display: block;
+            margin: 3.75rem auto 0;
+        }
+        .title{
+            margin-top: 1.875rem;
+        }
+    }
+    &__smallthird__layer{
+        order: 2;
+    }
+    &__largethird__layer{
+        order: 1;
+        background-image: url('/images/rock.png');
+    }
+    &__fourth__layer{
+        color: $black;
+        background-color: $second-white;
+    }
+    .content{
+        @include regulate-text();
+        margin-top: 1.875rem;
+        line-height: 21px;
+    }
+
+    
+}

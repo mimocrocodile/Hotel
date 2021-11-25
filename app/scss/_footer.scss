@@ -1,0 +1,49 @@
+.footer{
+    height: 7.5rem;
+    display: flex;
+    .hashtag{
+        flex: 2;
+    }
+    .socials{
+        flex: 2;
+        .social{
+            background-color: $link-hover;
+            display: inline-block;
+            width: 2.875rem;
+            height: 3rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            @include blue-button;
+            &__twitter{
+                background-image: url(/images/twitter.svg);
+            }
+            &__fb{
+                background-image: url(/images/fb-icon.svg);
+            }
+            &__youtube{
+                background-image: url(/images/youtube.svg);
+            }
+            
+            &:not(:last-child)
+            {
+                margin-right: 6px;
+            }
+        }
+    }
+    .academ{
+        flex: 2;
+        p{
+            display: inline-block;
+            margin-right: 8px;
+        }
+        &__logo{
+            width: 7.1875rem;
+            height: 2.5rem;
+            display: inline-block;
+            background-image: url(/images/logo-htmlacademy.svg);
+            background-repeat: no-repeat;
+        }
+        
+        
+    }
+}
